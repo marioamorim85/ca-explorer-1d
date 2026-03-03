@@ -1,0 +1,52 @@
+# Tests
+
+## Test 1 - App loads with title and rule selector [sanity]
+Viewport: desktop
+Description: Verifies the app loads with the main heading and rule controls in English.
+
+Steps:
+1. Navigate to the app
+2. Wait for page to fully load
+
+Expected: A heading containing "Elementary Cellular Automata" is visible. A rule number input or slider is visible. The 8-bit rule table showing neighborhood patterns is visible. A language toggle button showing "PT" is visible.
+
+## Test 2 - Language toggle switches to Portuguese
+Viewport: desktop
+Description: Verifies clicking the language toggle switches all UI text to Portuguese.
+
+Steps:
+1. Navigate to the app
+2. Click the language toggle button showing "PT"
+3. Wait for UI to update
+
+Expected: The heading changes to contain "Autómatos Celulares". The toggle button now shows "EN". Section titles appear in Portuguese.
+
+## Test 3 - Rule table shows 8 combinations
+Viewport: desktop
+Description: Verifies all 8 neighborhood combinations are displayed.
+
+Steps:
+1. Navigate to the app
+2. Look at the rule configuration section
+
+Expected: 8 neighborhood patterns are shown (000, 001, 010, 011, 100, 101, 110, 111). Each has a clickable output cell.
+
+## Test 4 - Simulation grid renders generations
+Viewport: desktop
+Description: Verifies the simulation runs and shows output.
+
+Steps:
+1. Navigate to the app
+2. Observe the simulation area
+
+Expected: A grid/canvas of cells is visible showing multiple generations of the automaton with a pattern formed by black and green cells.
+
+## Test 5 - Mobile layout is usable
+Viewport: mobile
+Description: Verifies the app is usable on mobile devices.
+
+Steps:
+1. Navigate to the app on mobile viewport
+2. Scroll through the page
+
+Expected: All controls are accessible. The language toggle is visible. The rule table and simulation grid adapt to the smaller viewport without horizontal overflow.
